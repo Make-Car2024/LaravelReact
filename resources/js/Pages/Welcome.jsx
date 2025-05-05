@@ -2,6 +2,8 @@ import Wuhu from './Wuhu';
 import FT from './footer';
 import CB from './Coba';
 import CD from './Card';
+import LY from './layanan';
+
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     const handleImageError = () => {
@@ -19,7 +21,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
         <>
             <Wuhu />
             <CB />
+            <LY />
             <CD />
+   
             <FT />
         </>
     );
