@@ -4,15 +4,15 @@ import { Carousel } from 'antd';
 const carouselImages = [
   {
     id: 1,
-    src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrWsYWwjkmQ1OcRq9bSsBfuQw_u1rk_7vQKmwt6kXd_Nq9A3yVsHKRkGgGkOA0TlsRTff19R9H9JSymrgYCGo_0KccsRqbXz10TCjL2ehG5R7eVMscpuNuL1eAfw6qXw97ke2yQn1k63bo/s0/LAPTOP-WALLPAPER-HD.jpg",
+    src: "https://nagantour.com/wp-content/uploads/2023/10/Taman-Bunga-Celosia.webp",
   },
   {
     id: 2,
-    src: "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg",
+    src: "https://thumb.viva.id/vivawisata/1265x711/2024/12/14/675d742da9542-candi-gedongsongo-di-ungaran-kabupaten-semarang-jawa-tengah_wisata.jpg",
   },
   {
     id: 3,
-    src: "https://media.newyorker.com/photos/5c0195240591e72cf6b59d12/master/w_1920,c_limit/Duke-Spongebob_01.jpg",
+    src: "https://thumb.tvonenews.com/thumbnail/2022/04/22/626251ef1b82a-suasana-kantor-bupati-semarang_665_374.jpg",
   }
 ];
 

@@ -138,7 +138,7 @@ const App = () => {
                         onMouseLeave={() => setHoveredCard(null)}
                         style={{
                             position: 'relative',
-                            height: '300px',
+                            height: '250px', // Reduced height from 300px
                             borderRadius: '8px',
                             overflow: 'hidden',
                             cursor: 'pointer',
@@ -176,7 +176,7 @@ const App = () => {
                         <div
                             style={{
                                 position: 'absolute',
-                                top: '20px',
+                                top: '15px', // Reduced from 20px
                                 left: 0,
                                 width: '100%',
                                 padding: '0 20px',
@@ -185,7 +185,7 @@ const App = () => {
                         >
                             <h3
                                 style={{
-                                    fontSize: '20px',
+                                    fontSize: '18px', // Reduced from 20px
                                     fontWeight: '600',
                                     color: 'white',
                                     textShadow: '0 2px 4px rgba(0,0,0,0.5)',
@@ -204,7 +204,7 @@ const App = () => {
                                 bottom: 0,
                                 left: 0,
                                 width: '100%',
-                                padding: '20px',
+                                padding: '15px', // Reduced from 20px
                                 backgroundColor: 'rgba(0,0,0,0.7)',
                                 color: 'white',
                                 transform:
@@ -218,9 +218,9 @@ const App = () => {
                             <p
                                 style={{
                                     margin: 0,
-                                    fontSize: '14px',
-                                    lineHeight: '1.5',
-                                    marginBottom: '15px',
+                                    fontSize: '13px', // Reduced from 14px
+                                    lineHeight: '1.4', // Reduced from 1.5
+                                    marginBottom: '10px', // Reduced from 15px
                                 }}
                             >
                                 {news.description}
@@ -229,13 +229,14 @@ const App = () => {
                                 href={news.url}
                                 style={{
                                     display: 'inline-block',
-                                    padding: '8px 16px',
+                                    padding: '6px 12px', // Reduced from 8px 16px
                                     backgroundColor: '#1890ff',
                                     color: 'white',
                                     textDecoration: 'none',
                                     borderRadius: '4px',
                                     cursor: 'pointer',
                                     transition: 'background-color 0.2s ease',
+                                    fontSize: '13px', // Added smaller font size
                                 }}
                                 onMouseEnter={(e) => e.stopPropagation()}
                                 onMouseLeave={(e) => e.stopPropagation()}
@@ -245,6 +246,37 @@ const App = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+
+            {/* Read More Button Section */}
+            <div
+                style={{
+                    textAlign: 'center',
+                    marginTop: '24px',
+                    padding: '16px',
+                    backgroundColor: '#f5f5f5',
+                    borderRadius: '8px',
+                    boxShadow: '0 1px 2px 0 rgba(0,0,0,0.03)',
+                }}
+            >
+                <a
+                    href="#" // Link to news page
+                    style={{
+                        display: 'inline-block',
+                        padding: '10px 24px',
+                        backgroundColor: '#1890ff',
+                        color: 'white',
+                        textDecoration: 'none',
+                        borderRadius: '4px',
+                        fontWeight: '500',
+                        transition: 'background-color 0.2s ease',
+                        ':hover': {
+                            backgroundColor: '#40a9ff',
+                        },
+                    }}
+                >
+                    Lihat Semua Berita >>
+                </a>
             </div>
         </div>
     );

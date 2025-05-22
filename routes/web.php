@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use Faker\Guesser\Name;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -22,6 +23,14 @@ Route::get('/test', function () {
     ]);
 });
 
+Route::get('/visi-misi', function () {
+    return Inertia::render('VisiMisi');
+})->name('visi-misi');
+
+Route::get('/hak-kewajiban', function () {
+    return Inertia::render('HakKewajiban');
+})->name('hak-kewajiban');
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -33,3 +42,4 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
